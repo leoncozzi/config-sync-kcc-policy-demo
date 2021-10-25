@@ -1,0 +1,22 @@
+resources:
+- ../../../base/cluster
+- ../../../base/cluster/kcc
+- ../../../tenants/tenant-a
+- ../../../tenants/tenant-b
+- ../../../tenants/tenant-c
+
+patches:
+- target:
+    kind: RepoSync
+    name: repo-sync
+  patch: |-
+    - op: replace
+      path: /spec/git/branch
+      value: dev
+- target:
+    kind: ConfigConnector
+    name: configconnector.core.cnrm.cloud.google.com
+  patch: |-
+    - op: replace
+      path: /spec/googleServiceAccount
+      value: cnrmsa-dev-cluster@PROJECT-INSERT.iam.gserviceaccount.com
