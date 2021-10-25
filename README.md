@@ -62,7 +62,7 @@ config-root
 Fork the example repository into your organization and clone the forked repo locally.  Ideally execute this from [Cloud Shell](https://cloud.google.com/shell).
 
 ```
-$ git clone https://github.com/<YOUR_ORGANIZATION>/acm-multi-repo-kustomize-sample.git configuration
+$ git clone https://github.com/<YOUR_ORGANIZATION>/config-sync-kcc-policy-demo.git configuration
 ```
 
 ### Provision GCP services
