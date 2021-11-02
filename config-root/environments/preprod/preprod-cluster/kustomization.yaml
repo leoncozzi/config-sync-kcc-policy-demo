@@ -17,4 +17,4 @@ patches:
   patch: |-
     - op: replace
       path: /spec/googleServiceAccount
-      value: cnrmsa-preprod-cluster@PROJECT-INSERT.iam.gserviceaccount.com
+      value: cnrmsa-preprod-cluster@mindful-hall-330908.iam.gserviceaccount.com
